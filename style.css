@@ -1,0 +1,87 @@
+body{
+    font-family: 'Poppins',sans-serif !important;
+    
+}
+.nav-link{
+    padding: 10px 40px;
+    
+    margin: 10px 30px;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: white;
+}
+.navlink:hover{
+    color:grey;
+    font-weight: 500;
+    
+}
+.signin{
+    background-color: #30e430;
+    color:white;
+    
+}
+.greenbg{
+    background-color: #F0FFF0;
+    
+}
+.scheduletxt{
+    color:#21B573;
+}
+.subcontainer{
+    padding:10px;
+    margin: 50px 10px;
+}
+.gap{
+    padding:10px;
+    margin-top: 10px;
+}
+.funtxt{
+    color:orange;
+}
+.schedule{
+    font-weight: 700;
+}
+.greenbtn{
+    background-color:#21B573;
+    padding:12px 36px;
+    color: white;
+    font-weight: 400;
+    border-radius: 9px;
+    font-size: 18px;
+}
+
+.firstcontainer .col-md-6 img{
+    height: 346px;
+width: 554px;
+left: 691px;
+top: 157px;
+border-radius: 0px;
+margin-top:100px;
+margin-bottom: 73px;
+}
+.btncon{
+    display: flex;
+flex-direction: row;
+align-items: center;
+  
+}
+.infocontainer .col-md-3 {
+    width:270px;
+    height:270px;
+    margin:50px 20px;
+    background-color:#F8FFFB;
+    border-radius:9px;
+}
+.infocontainer .col-md-3 h4 p {
+    margin:20px;
+    padding:5px;
+}
+.infocontainer .col-md-3 h4{
+    margin-top:20px;
+}
+.infocontainer .col-md-3:hover{
+    transform:scale(1.1);
+    background-color:white;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
