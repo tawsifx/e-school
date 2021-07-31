@@ -1,5 +1,5 @@
-body{
-    font-family: 'Poppins',sans-serif !important;
+*{
+    font-family: 'Poppins',sans-serif;
     
 }
 .nav-link{
@@ -94,6 +94,74 @@ align-items: center;
     height:234px;
 }
 .cardcontainer .col-md-4{
-    border:1px solid black;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 40px 0 rgba(0, 0, 0, 0.05);
     margin:62px 30px;
+    border-radius:10px;
+}
+.cardcontainer .col-md-4 h4, p, button, .imgcon, .datecon{
+    margin-top: 10px;
+}
+.cardcontainer .col-md-4  button{
+    padding: 8px 28px;
+    background: #21B573;
+    border-radius:33px;
+    color: white;
+}
+.bi{
+    margin-top:10px;
+    padding:0px 8px;
+}
+.testimonialtxt{
+    height: 90px;
+    width: 580px;
+    
+
+}
+.testimonialcon2 .col-md-1 img{
+    height: 120px;
+    width: 120px;
+    border-radius: 0px;
+    
+
+}
+.testimonialcon2 .col-md-1 {
+    margin: 0px 20px;
+}
+.testimonialcon2 .col-md-11 p{
+    font-weight:400;
+}
+.testimonialcon2{
+    margin: 60px 0px 100px 0px;
+}
+.footertxt{
+    color: white;
+}
+.footer{
+    background-color: #282531;
+    
+    width: auto;
+}
+.footer .col-md-3{
+    margin: 55px 75px;
+}
+.footer .col-md-3 p{
+    color:white;
+    
+}
+.linkcol{
+    width: 150px;
+    height: 181px;
+    margin:0px 75px;
+}
+.millioncol{
+    margin-left:50px;
+}
+.footer .col-md-3 a{
+    text-decoration: none;
+}
+.footer .linkcol a:hover{
+    transform: scale(1.1);
+}
+.linkcol p{
+    font-weight: 700;
 }
