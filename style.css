@@ -1,167 +1,237 @@
-*{
-    font-family: 'Poppins',sans-serif;
-    
+/* Modern CSS Architecture for eSchool */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
-.nav-link{
-    padding: 10px 40px;
-    
-    margin: 10px 30px;
-    color: black;
-    font-weight: 700;
-    border-radius: 10px;
-    background-color: white;
+
+:root {
+    --brand-green: #21B573;
+    --brand-dark: #282531;
+    --brand-light-bg: #F0FFF0;
+    --brand-orange: #FFA500;
+    --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
-.navlink:hover{
-    color:grey;
+
+body {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.nav-link {
+    padding: 10px 24px !important;
+    margin: 5px 12px;
+    color: #111111;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--brand-green);
+}
+
+.signin {
+    background-color: var(--brand-green) !important;
+    color: #ffffff !important;
+    border-radius: 24px;
+    padding: 8px 26px !important;
+}
+
+.signin:hover {
+    background-color: #1a945d !important;
+    color: #ffffff !important;
+}
+
+.greenbg {
+    background-color: var(--brand-light-bg);
+}
+
+.scheduletxt {
+    color: var(--brand-green);
     font-weight: 500;
-    
-}
-.signin{
-    background-color: #30e430;
-    color:white;
-    
-}
-.greenbg{
-    background-color: #F0FFF0;
-    
-}
-.scheduletxt{
-    color:#21B573;
-}
-.subcontainer{
-    padding:10px;
-    margin: 50px 10px;
-}
-.gap{
-    padding:10px;
-    margin-top: 10px;
-}
-.funtxt{
-    color:orange;
-}
-.schedule{
-    font-weight: 700;
-}
-.greenbtn{
-    background-color:#21B573;
-    padding:12px 36px;
-    color: white;
-    font-weight: 400;
-    border-radius: 9px;
-    font-size: 18px;
 }
 
-.firstcontainer .col-md-6 img{
-    height: 346px;
-width: 554px;
-left: 691px;
-top: 157px;
-border-radius: 0px;
-margin-top:100px;
-margin-bottom: 73px;
+.funtxt {
+    color: var(--brand-orange);
 }
-.btncon{
-    display: flex;
-flex-direction: row;
-align-items: center;
-  
+
+.schedule {
+    font-weight: 700;
 }
+
+.greenbtn {
+    background-color: var(--brand-green);
+    border: none;
+    padding: 12px 36px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(33, 181, 115, 0.35);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.greenbtn:hover {
+    background-color: #1a945d;
+    transform: translateY(-2px);
+    color: #ffffff;
+}
+
+/* First Banner / Hero */
+.firstcontainer .col-md-6 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 30px auto;
+    display: block;
+}
+
+.subcontainer {
+    padding: 20px 10px;
+    margin: 30px 0;
+}
+
+/* Info Feature Cards */
 .infocontainer .col-md-3 {
-    width:270px;
-    height:270px;
-    margin:50px 20px;
-    background-color:#F8FFFB;
-    border-radius:9px;
+    max-width: 260px;
+    min-height: 260px;
+    margin: 20px;
+    background-color: #F8FFFB;
+    border-radius: 12px;
+    padding: 30px 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
 }
-.infocontainer .col-md-3 h4 p {
-    margin:20px;
-    padding:5px;
+
+.infocontainer .col-md-3:hover {
+    transform: translateY(-6px);
+    background-color: #ffffff;
+    box-shadow: var(--shadow-hover);
 }
-.infocontainer .col-md-3 h4{
-    margin-top:20px;
+
+.infocontainer .col-md-3 h4 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-.infocontainer .col-md-3:hover{
-    transform:scale(1.1);
-    background-color:white;
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+/* Online Course Cards */
+.cardcontainer .col-md-4 {
+    background: #ffffff;
+    box-shadow: var(--shadow-card);
+    margin: 25px 15px;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 360px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
- .individualcardcon{
-    width:370px;
-    height:483px;
+
+.cardcontainer .col-md-4:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
 }
-.cardcontainer .col-md-4 img{
-    width:331px;
-    height:234px;
+
+.cardcontainer .col-md-4 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
-.cardcontainer .col-md-4{
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 40px 0 rgba(0, 0, 0, 0.05);
-    margin:62px 30px;
-    border-radius:10px;
+
+.cardcontainer .col-md-4 h4 {
+    margin-top: 14px;
+    font-size: 1.15rem;
+    font-weight: 600;
 }
-.cardcontainer .col-md-4 h4, p, button, .imgcon, .datecon{
+
+.cardcontainer .col-md-4 button {
+    padding: 8px 24px;
+    background: var(--brand-green);
+    border: none;
+    border-radius: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.2s ease;
 }
-.cardcontainer .col-md-4  button{
-    padding: 8px 28px;
-    background: #21B573;
-    border-radius:33px;
-    color: white;
-}
-.bi{
-    margin-top:10px;
-    padding:0px 8px;
-}
-.testimonialtxt{
-    height: 90px;
-    width: 580px;
-    
 
+.cardcontainer .col-md-4 button:hover {
+    background-color: #1a945d;
 }
-.testimonialcon2 .col-md-1 img{
-    height: 120px;
-    width: 120px;
-    border-radius: 0px;
-    
 
+.datecon {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666666;
 }
-.testimonialcon2 .col-md-1 {
-    margin: 0px 20px;
+
+.bi {
+    margin-right: 6px;
+    color: var(--brand-green);
 }
-.testimonialcon2 .col-md-11 p{
-    font-weight:400;
-}
-.testimonialcon2{
-    margin: 60px 0px 100px 0px;
-}
-.footertxt{
-    color: white;
-}
-.footer{
-    background-color: #282531;
-    
-    width: auto;
-}
-.footer .col-md-3{
-    margin: 55px 75px;
-}
-.footer .col-md-3 p{
-    color:white;
-    
-}
-.linkcol{
-    width: 150px;
-    height: 181px;
-    margin:0px 75px;
-}
-.millioncol{
-    margin-left:50px;
-}
-.footer .col-md-3 a{
-    text-decoration: none;
-}
-.footer .linkcol a:hover{
-    transform: scale(1.1);
-}
-.linkcol p{
+
+/* Testimonial Section */
+.testimonialcon1 h1 {
     font-weight: 700;
+    margin: 50px 0 20px;
+}
+
+.testimonialcon2 {
+    margin: 30px auto 80px;
+    max-width: 800px;
+}
+
+.testimonialcon2 .col-md-1 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonialtxt {
+    max-width: 600px;
+    padding: 10px;
+}
+
+.testimonialtxt h6 {
+    font-weight: 400;
+    font-style: italic;
+    color: #555555;
+    line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--brand-dark);
+    padding: 60px 5% 30px;
+    color: #ffffff;
+}
+
+.footertxt {
+    color: #d1d1d1;
+    font-size: 0.95rem;
+}
+
+.linkcol p {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.linkcol a {
+    text-decoration: none;
+    color: #b0b0b0 !important;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.linkcol a:hover {
+    color: var(--brand-green) !important;
+    transform: translateX(4px);
 }
